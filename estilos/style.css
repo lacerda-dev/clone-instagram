@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {margin: 0px; padding: 0px;}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgray;
+}
+header > div > a > img#logo {
+    width: 110px;
+    height: 30px;
+    margin-left: 1px;
+    margin-top: 5px;
+    align-items: center;
+}
+header > div > input#pesquisa {
+    padding: 10px;
+    margin-right: 15px;
+    width: 250px;
+    background-color: rgba(210, 208, 208, 0.512);
+    border: none;
+    border-radius: 7px;
+}
+header > div > a > span#notificacao {
+    padding-right: 15px;
+    color: black;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+section#stories {
+    display: flex;
+    background-color: lightblue;
+}
+section#stories > a > img {
+    width: 50px;
+    margin: 25px 10px;
+    border: 3.5px solid #B93590;
+    border-radius: 50%;
+}
+section#feed {
+    margin: 60px;
+    background-color: lightgray;
+}
+article#post > div.perfil > img {
+    width: 35px;
+    margin: 25px 10px;
+    border: 2px solid #B93590;
+    border-radius: 50%;
+}
+article#post > a > img {
+    width: 470px;
+    border-radius: 4px;
+}
