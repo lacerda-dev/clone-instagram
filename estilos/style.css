@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Paleta de cores 
+    #6D59C0 #B93590 #E33F5F #FDD579
+*/
+
+* {padding: 0px; margin: 0px;}
+
+body {
+    font-family: "Roboto", "Helvetica Naue", Arial, sans-serif;
+    background-color: #fff;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 32px 10px 16px;
+    border-bottom: 1px solid lightgray;
+}
+.logo {
+    cursor: pointer;
+}
+#pesquisa {
+    
+    padding: 10px 50px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(233, 226, 226);
+}
+.inav {
+    cursor: pointer;
+}
+section.stories {
+    padding-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+.stories-container {
+    flex-direction: row;
+    display: flex;
+    margin-left: 5px;
+}
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.stories img {
+    width: 52px;
+    margin: 9px;
+    border-radius: 50%;
+    border: 3px solid #E33F5F;
+}
+.stories img.sua-foto {
+    border: 3px solid rgb(188, 183, 183);
+}
+.nome {
+    font-size: 12px;
+}
+.seu-nome {
+    font-size: 12px;
+    color: gray;
+}
