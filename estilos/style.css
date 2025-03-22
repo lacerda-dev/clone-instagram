@@ -18,6 +18,9 @@ body {
     align-items: center;
     padding: 17px 32px 10px 16px;
     border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
 }
 .logo {
     cursor: pointer;
@@ -70,7 +73,6 @@ section.stories {
     font-size: 12px;
     color: gray;
 }
-
 .user {
     display: flex;
     flex-direction: row;
@@ -78,7 +80,6 @@ section.stories {
     margin-top: 18px;
     
 }
-
 .user img {
     width: 32px;
     margin: 9px;
@@ -99,6 +100,7 @@ section.stories {
 section.posts {
     display: flex;
     justify-content: center;
+    
 }
 .post-image > img {
     width: 500px;
@@ -114,4 +116,68 @@ section.posts {
 }
 .salvar {
     padding-left: 365px;
+}
+.curtidas > img {
+    width: 300px;
+    cursor: pointer;
+}
+.legenda {
+    font-size: .9em;
+    width: 500px;
+    font-weight: 350;
+}
+.uname {
+    color: black;
+    text-decoration: none;
+}
+.marca {
+    text-decoration: none;
+    color: rgb(80, 80, 227);
+}
+p.traducao {
+    margin-top: 10px;
+    font-size: .83em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.vcomentarios {
+    margin-top: 10px;
+    font-size: .9em;
+    color: gray;
+    cursor: pointer;
+}
+.coment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray ;
+}
+#comentario {
+    border: none;
+    padding: 10px 30px 20px 0px;
+    
+}
+.lemoji {
+    color: gray;
+    cursor: pointer;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    bottom: 0px;
+    background-color: #fff;
+    border-top: 1px solid lightgray;
+    padding: 6px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.foto-perfil {
+    width: 32px;
+    border-radius: 50%;
+    border: 2.2px solid #E33F5F;
+    cursor: pointer;
 }
