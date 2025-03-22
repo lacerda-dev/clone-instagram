@@ -38,8 +38,8 @@ section.stories {
     justify-content: center;
 }
 .stories-container {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     margin-left: 5px;
 }
 .story {
@@ -59,10 +59,59 @@ section.stories {
 .stories img.sua-foto {
     border: 3px solid rgb(188, 183, 183);
 }
+.stories img.foto-theo {
+    border: 3px solid rgb(74, 208, 37);
+}
 .nome {
     font-size: 12px;
+    font-weight: 400;
 }
 .seu-nome {
     font-size: 12px;
     color: gray;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+    
+}
+
+.user img {
+    width: 32px;
+    margin: 9px;
+    border-radius: 50%;
+    border: 2.2px solid #E33F5F;
+    cursor: pointer;
+}
+.nome-feed {
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.opcoes {
+    padding-left: 380px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+section.posts {
+    display: flex;
+    justify-content: center;
+}
+.post-image > img {
+    width: 500px;
+    margin: 5px 0px 10px 0px;
+    border-radius: 4px;
+}
+.post-actions {
+    display: flex;
+}
+.post-actions > svg {
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+.salvar {
+    padding-left: 365px;
 }
