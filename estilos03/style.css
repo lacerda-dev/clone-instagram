@@ -221,7 +221,6 @@ main {
     font-size: .82em;
     padding: 10px;
     padding-left: 30px;
-    
 }
 .user {
     color: black;
@@ -262,10 +261,13 @@ main {
 }
 .comentar {
     padding: 5px;
-    width: 200px;
+    width: 470px;
     border: none;
     background: none;
     outline: none;
+}
+.emoji {
+    color: gray;
 }
 .post {
     background-color: #fff;
