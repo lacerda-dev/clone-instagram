@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* MOBILE FIRST */
+
+
 /* Paleta de cores 
     #6D59C0 #B93590 #E33F5F #FDD579
 */
@@ -78,7 +81,6 @@ section.stories {
     flex-direction: row;
     align-items: center;
     margin-top: 18px;
-    
 }
 .user img {
     width: 32px;
@@ -99,8 +101,7 @@ section.stories {
 }
 section.posts {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .post-image > img {
     width: 500px;
@@ -155,7 +156,6 @@ p.traducao {
 #comentario {
     border: none;
     padding: 10px 30px 20px 0px;
-    
 }
 .lemoji {
     color: gray;
@@ -171,13 +171,50 @@ p.traducao {
     border-top: 1px solid lightgray;
     padding: 6px;
 }
+.menu > a > .iweb {
+    display: none;
+}
 .menu a {
     text-decoration: none;
     color: black;
+    justify-content: space-evenly;
+}
+#logo-nav {
+    margin-top: 40px;
+    margin-bottom: 27px;
 }
 .foto-perfil {
     width: 32px;
     border-radius: 50%;
     border: 2.2px solid #E33F5F;
     cursor: pointer;
+}
+footer.lateral {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 30px 100px 50px 80px;
+}
+.perfil-lateral {
+    display: flex;
+    align-items: center;
+}
+.nome-perfil {
+    font-size: .8em;
+    font-weight: bold;
+    margin: 10px;
+}
+.foto-lateral {
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.op-lateral {
+    display: flex;
+    font-size: .8em;
+    font-weight: 500;
+    color: rgb(70, 161, 231);
 }
