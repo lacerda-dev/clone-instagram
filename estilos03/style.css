@@ -73,7 +73,7 @@ nav {
     border-radius: 50%;
 }
 
-/* FEED */
+/* STORIES */
 
 main { 
     background-color: #fff;
@@ -124,14 +124,16 @@ main {
     margin: 5px;
     border: 2.4px solid rgb(61, 208, 27);
 } 
+
+/* FEED */
+
 .feed {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 10px;
-
-    border: 1px solid black;
 }
 .phead {
     display: flex;
@@ -145,6 +147,7 @@ main {
     text-decoration: none;
     font-size: .8em;
     font-weight: bold;
+    padding-right: 20px;
 }
 .phead img {
     width: 30px;
@@ -153,6 +156,9 @@ main {
     margin: 7px;
     display: flex;
     justify-items: center;
+}
+.opcoes {
+    padding-left: 350px;
 }
 .pfoto img {
     width: 500px;
@@ -166,6 +172,9 @@ main {
 .pfoto > a {
     display: flex;
     justify-content: center;
+}
+.esquerda {
+    padding-right: 300px;
 }
 .pitens {
     display: flex;
@@ -194,10 +203,75 @@ main {
 .pitens svg {
     margin: 7px;
 }
+.pcurtidas {
+    display: flex;
+    justify-content: center;
+    font-size: .85em;
+    font-weight: 400;
+    padding-right: 230px;
+}
+.pcurtidas a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.pleg {
+    display: flex;
+    width: 500px;
+    font-size: .82em;
+    padding: 10px;
+    padding-left: 30px;
+    
+}
+.user {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+}
+.verificado {
+    padding: 2px;
+}
+.legenda a {
+    text-decoration: none;
+    color: rgb(46, 46, 233);
+}
+.ptrad {
+    padding-left: 30px;
+}
+.ptrad a {
+    text-decoration: none;
+    color: black;
+    font-size: .75em;
+    font-weight: 500;
+}
+.pcom {
+    padding-left: 30px;
+}
+.pcom a {
+    text-decoration: none;
+    color: rgb(111, 125, 140);
+    font-size: .8em;
+}
+.ccaixa {
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.comentar {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    background: none;
+    outline: none;
+}
 .post {
     background-color: #fff;
-
-    border: 2px solid red;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgray;
 }
 
 /* LATERAL DE SUJESTÕES */
