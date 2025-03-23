@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {padding: 0; margin: 0;}
+
+body {
+    font-family: "Roboto", "Helvetica Naue", Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 5px 20px;
+   
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+nav {
+    background-color: #fff;
+    grid-column: 1;
+    height: 100vh;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: 0;
+
+    border-right: 1px solid lightgray ;
+    
+}
+.logo {
+    background-color: #fff;
+    align-items: center;
+    margin: 40px 50px 30px 0px;
+
+    
+}
+.logo > a {
+    color: black;
+    padding: 10px;
+}
+.menu {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin-right: 30px;
+}
+.itens {
+    padding: 8px 30px 8px 8px;
+}
+.itens:hover {
+    background-color: rgba(211, 211, 211, 0.395);
+    border-radius: 5px;
+    transition: .3s;
+}
+.itens > a > svg {
+    margin-right: 13px;
+}
+.itens > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: black;
+}
+.itens img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* FEED */
+
+main { 
+    background-color: rgb(198, 22, 198);
+    grid-column: 2;
+    
+}
+.storiesf {
+    background-color: rgb(199, 112, 199);
+}
+.story {
+    background-color: rgb(129, 72, 129);
+}
+.feed {
+    background-color: blueviolet;
+}
+.post {
+    background-color: rebeccapurple;
+}
+
+/* LATERAL DE SUJESTÕES */
+
+aside {
+    background-color: green;
+    grid-column: 3;
+}
+
+.perfil {
+    background-color: rgb(255, 192, 252);
+}
+
+.sujestão {
+    background-color: lightgreen;
+}
+
+/* TERMOS E CONDIÇÕES */
+
+footer {
+    background-color: greenyellow;
+    grid-column: 3;
+}
