@@ -2,219 +2,392 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* MOBILE FIRST */
-
-
-/* Paleta de cores 
-    #6D59C0 #B93590 #E33F5F #FDD579
-*/
-
-* {padding: 0px; margin: 0px;}
+* {padding: 0; margin: 0;}
 
 body {
     font-family: "Roboto", "Helvetica Naue", Arial, sans-serif;
-    background-color: #fff;
+    display: grid;
+    grid-template-columns: 250px auto 300px;
+    grid-template-rows: auto 1fr;    
+    gap: 7px 90px;
+   
 }
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 32px 10px 16px;
-    border-bottom: 1px solid lightgray;
-    position: sticky;
-    top: 0px;
+
+
+/* MENU DE NAVEGAÇÃO */
+
+nav {
     background-color: #fff;
+    grid-column: 1;
+    height: 100vh;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: 0;
+
+    border-right: 1px solid lightgray ;
+    
 }
 .logo {
-    cursor: pointer;
+    background-color: #fff;
+    align-items: center;
+    margin: 40px 50px 30px 0px;
 }
-#pesquisa {
-    
-    padding: 10px 50px 10px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(233, 226, 226);
+.logo > a {
+    color: black;
+    padding: 10px;
 }
-.inav {
-    cursor: pointer;
-}
-section.stories {
-    padding-top: 17px;
+.menu {
+    background-color: #fff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin-right: 30px;
 }
-.stories-container {
+.itens {
+    padding: 8px 30px 8px 8px;
+}
+.itens:hover {
+    background-color: rgba(211, 211, 211, 0.395);
+    border-radius: 5px;
+    transition: .3s;
+}
+.itens > a > svg {
+    margin-right: 13px;
+}
+.itens > a {
     display: flex;
     flex-direction: row;
-    margin-left: 5px;
+    align-items: center;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: black;
+}
+.itens img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* STORIES */
+
+main { 
+    background-color: #fff;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+.storiesf {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 18px;
 }
 .story {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+.story a {
+    font-size: .7em;
+    text-decoration: none;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.stories img {
-    width: 52px;
-    margin: 9px;
-    border-radius: 50%;
-    border: 3px solid #E33F5F;
-}
-.stories img.sua-foto {
-    border: 3px solid rgb(188, 183, 183);
-}
-.stories img.foto-theo {
-    border: 3px solid rgb(74, 208, 37);
-}
-.nome {
-    font-size: 12px;
-    font-weight: 400;
-}
-.seu-nome {
-    font-size: 12px;
-    color: gray;
-}
-.user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 18px;
-}
-.user img {
-    width: 32px;
-    margin: 9px;
-    border-radius: 50%;
-    border: 2.2px solid #E33F5F;
-    cursor: pointer;
-}
-.nome-feed {
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.opcoes {
-    padding-left: 380px;
-    padding-top: 13px;
-    cursor: pointer;
-}
-section.posts {
-    display: flex;
-    justify-content: center; 
-}
-.post-image > img {
-    width: 500px;
-    margin: 5px 0px 10px 0px;
-    border-radius: 4px;
-}
-.post-actions {
-    display: flex;
-}
-.post-actions > svg {
-    margin: 0px 10px 0px 0px;
-    cursor: pointer;
-}
-.salvar {
-    padding-left: 365px;
-}
-.curtidas > img {
-    width: 300px;
-    cursor: pointer;
-}
-.legenda {
-    font-size: .9em;
-    width: 500px;
-    font-weight: 350;
-}
-.uname {
-    color: black;
-    text-decoration: none;
-}
-.marca {
-    text-decoration: none;
-    color: rgb(80, 80, 227);
-}
-p.traducao {
-    margin-top: 10px;
-    font-size: .83em;
-    font-weight: 600;
-    cursor: pointer;
-}
-.vcomentarios {
-    margin-top: 10px;
-    font-size: .9em;
-    color: gray;
-    cursor: pointer;
-}
-.coment {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray ;
-}
-#comentario {
-    border: none;
-    padding: 10px 30px 20px 0px;
-}
-.lemoji {
-    color: gray;
-    cursor: pointer;
-}
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: sticky;
-    bottom: 0px;
-    background-color: #fff;
-    border-top: 1px solid lightgray;
-    padding: 6px;
-}
-.menu > a > .iweb {
-    display: none;
-}
-.menu a {
-    text-decoration: none;
-    color: black;
-    justify-content: space-evenly;
-}
-#logo-nav {
-    margin-top: 40px;
-    margin-bottom: 27px;
-}
-.foto-perfil {
-    width: 32px;
-    border-radius: 50%;
-    border: 2.2px solid #E33F5F;
-    cursor: pointer;
-}
-footer.lateral {
-    display: flex;
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 30px 100px 50px 80px;
-}
-.perfil-lateral {
-    display: flex;
-    align-items: center;
-}
-.nome-perfil {
-    font-size: .8em;
-    font-weight: bold;
-    margin: 10px;
-}
-.foto-lateral {
-    width: 45px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
     margin: 5px;
 }
-.op-lateral {
+.story img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2.4px solid #E33F5F;
+}
+.story-theo a {
+    font-size: .7em;
+    text-decoration: none;
+    color: black;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.story-theo img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2.4px solid rgb(61, 208, 27);
+} 
+
+/* FEED */
+
+.feed {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.phead {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.phead > a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
     font-size: .8em;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.phead img {
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #E33F5F;
+    margin: 7px;
+    display: flex;
+    justify-items: center;
+}
+.opcoes {
+    padding-left: 350px;
+}
+.pfoto img {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin: 2px;
+}
+.pfoto > a {
+    display: flex;
+    justify-content: center;
+}
+.esquerda {
+    padding-right: 300px;
+}
+.pitens {
+    display: flex;
+    justify-content: space-around;
+}
+.pitens .curtir:hover {
+    color: gray;
+    transition: .1s;
+}
+.pitens .coment:hover {
+    color: gray;
+    transition: .1s;
+}
+.pitens .comp:hover {
+    color: gray;
+    transition: .1s;
+}
+.pitens .salvar:hover {
+    color: gray;
+    transition: .1s;
+}
+.pitens a {
+    color: black;
+    text-decoration: none;
+}
+.pitens svg {
+    margin: 7px;
+}
+.pcurtidas {
+    display: flex;
+    justify-content: center;
+    font-size: .85em;
+    font-weight: 400;
+    padding-right: 230px;
+}
+.pcurtidas a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.pleg {
+    display: flex;
+    width: 500px;
+    font-size: .82em;
+    padding: 10px;
+    padding-left: 30px;
+}
+.user {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+}
+.verificado {
+    padding: 2px;
+}
+.legenda a {
+    text-decoration: none;
+    color: rgb(46, 46, 233);
+}
+.ptrad {
+    padding-left: 30px;
+}
+.ptrad a {
+    text-decoration: none;
+    color: black;
+    font-size: .75em;
     font-weight: 500;
-    color: rgb(70, 161, 231);
+}
+.pcom {
+    padding-left: 30px;
+}
+.pcom a {
+    text-decoration: none;
+    color: rgb(111, 125, 140);
+    font-size: .8em;
+}
+.ccaixa {
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.comentar {
+    padding: 5px;
+    width: 470px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.emoji {
+    color: gray;
+}
+.post {
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* LATERAL DE SUJESTÕES */
+
+aside {
+    grid-column: 3;
+    grid-row: 1;
+    padding-right: 0px;
+}
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 23px 1px 15px 5px;
+}
+.foto-perfil {
+    padding: 8px;
+}
+.foto-perfil img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2.5px solid rgb(187, 184, 184);
+    cursor: pointer;
+}
+.nome-perfil {
+    font-size: .9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pjunto {
+    display: flex;
+    align-items: center;
+}
+.mudar {
+    padding-left: 30px;
+}
+.mudar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .85em;
+    color: rgb(61, 170, 233);
+}
+.mudar a:hover {
+    color: rgb(10, 10, 132);
+}
+.sujestão {
+    background-color: #fff;
+}
+.stitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 13px;
+}
+.stitle h1 {
+    color: rgb(148, 148, 148);
+    font-size: .9em;
+}
+.stitle a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .8em;
+    color: black;
+}
+.stitle a:hover {
+    color: gray;
+}
+.amigos {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+    padding: 7px 3px 5px 12px;
+}
+.ajunto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 5px;
+}
+.amigos a {
+    margin-right: 13px;
+}
+.famigos {
+    padding: 8px;
+}
+.famigos img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.namigos {
+    padding: 5px;
+    font-size: .9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.namigos a {
+    padding-left: 100px;
+}
+.sobre {
+    color: rgb(205, 202, 202);
+}
+.sobre a {
+    font-size: .71em;
+    color: rgb(205, 202, 202);
+    text-decoration: none;
+}
+.sobre a:hover {
+    text-decoration: underline;
+}
+.meta {
+    padding-top: 20px;
+    color: rgb(205, 202, 202);
+    font-size: .8em;
 }
