@@ -288,7 +288,9 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 23px 1px 15px 5px;
+    padding: 23px 1px 15px 0px;
+
+   
 }
 .foto-perfil {
     padding: 8px;
@@ -307,6 +309,9 @@ aside {
 .pjunto {
     display: flex;
     align-items: center;
+
+    
+
 }
 .mudar {
     padding-left: 30px;

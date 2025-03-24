@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {padding: 0px; margin: 0px;}
+
+body {
+    font-family: "Roboto", "Helvetica Naue", Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+/* MENU DE NAVEGAÇÃO */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 30px 1px 10px;
+    height: 100vh;
+    width: 200px;
+    border-right: 1px solid lightgray;
+    position: absolute;
+    left: 0px;
+    background-color: #fff;
+    position: fixed;
+}
+.logo-web {
+    padding: 25px 0px 10px 10px;
+}
+.logo-web > a {
+    color: black;
+}
+.cnav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    margin: 12px;
+}
+.cnav:hover{
+    background-color: rgba(211, 211, 211, 0.334);
+    border-radius: 5px;
+    transition: .3s;
+}
+.cnav svg {
+    margin: 10px;
+}
+.cnav .desc {
+    margin: 7px;
+}
+.cnav > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.inav {
+    color: black;
+}
+.desc {
+    color: black;
+    font-size: .9em;
+    font-weight: 500;
+}
+.menu img {
+    width: 37px;
+    border-radius: 50%;
+}
+
+/* FEED */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    border-bottom: 1px solid black;
+}
+.stories {
+    position: absolute;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.stories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.stories img {
+    width: 52px;
+    margin: 9px;
+    border-radius: 50%;
+    border: 3px solid #E33F5F;
+}
+.stories img.foto-theo {
+    border: 3px solid rgb(74, 208, 37);
+}
+.nome {
+    font-size: 12px;
+    font-weight: 350;
+}
+
+
+

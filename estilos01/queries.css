@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    .topbar {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        height: 100vh;
+        background-color: #fff;
+        border-right: 1px solid lightgray;
+        padding: 14px;
+    }
+    .menu > a > .imobile {
+        display: flex;
+        justify-items: baseline;
+    }
+    .menu > a > .iweb {
+        display: flex;
+        visibility: visible;
+        position: static;
+    }
+    .menu > a {
+        padding: 10px;
+    }
+    .menu > a:hover {
+        background-color: rgb(241, 238, 238);
+        border-radius: 7px;
+        transition: .3s;
+    }
+    .foto-perfil {
+        width: 28px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+    }
+}
+
+
