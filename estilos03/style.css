@@ -7,7 +7,8 @@
 body {
     font-family: "Roboto", "Helvetica Naue", Arial, sans-serif;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 250px auto 300px;
+    grid-template-rows: auto 1fr;    
     gap: 7px 90px;
    
 }
@@ -279,21 +280,114 @@ main {
 /* LATERAL DE SUJESTÕES */
 
 aside {
-    background-color: green;
     grid-column: 3;
+    grid-row: 1;
+    padding-right: 80px;
 }
-
 .perfil {
-    background-color: rgb(255, 192, 252);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 23px 1px 15px 5px;
 }
-
+.foto-perfil {
+    padding: 8px;
+}
+.foto-perfil img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2.5px solid rgb(187, 184, 184);
+    cursor: pointer;
+}
+.nome-perfil {
+    font-size: .9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pjunto {
+    display: flex;
+    align-items: center;
+}
+.mudar {
+    padding-left: 30px;
+}
+.mudar a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .85em;
+    color: rgb(61, 170, 233);
+}
+.mudar a:hover {
+    color: rgb(10, 10, 132);
+}
 .sujestão {
-    background-color: lightgreen;
+    background-color: #fff;
 }
-
-/* TERMOS E CONDIÇÕES */
-
-footer {
-    background-color: greenyellow;
-    grid-column: 3;
+.stitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 13px;
+}
+.stitle h1 {
+    color: rgb(148, 148, 148);
+    font-size: .9em;
+}
+.stitle a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .8em;
+    color: black;
+}
+.stitle a:hover {
+    color: gray;
+}
+.amigos {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+    padding: 7px 3px 5px 12px;
+}
+.ajunto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 5px;
+}
+.amigos a {
+    margin-right: 13px;
+}
+.famigos {
+    padding: 8px;
+}
+.famigos img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.namigos {
+    padding: 5px;
+    font-size: .9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.namigos a {
+    padding-left: 100px;
+}
+.sobre {
+    color: rgb(205, 202, 202);
+}
+.sobre a {
+    font-size: .71em;
+    color: rgb(205, 202, 202);
+    text-decoration: none;
+}
+.sobre a:hover {
+    text-decoration: underline;
+}
+.meta {
+    padding-top: 20px;
+    color: rgb(205, 202, 202);
+    font-size: .8em;
 }
