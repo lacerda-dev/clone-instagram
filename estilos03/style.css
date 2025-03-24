@@ -282,7 +282,7 @@ main {
 aside {
     grid-column: 3;
     grid-row: 1;
-    padding-right: 80px;
+    padding-right: 0px;
 }
 .perfil {
     display: flex;
