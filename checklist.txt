@@ -1,0 +1,49 @@
+Check List - Clone Instagram
+
+
+- Paleta de Cores ✅
+
+
+#6D59C0 #B93590 #E33F5F #FDD579
+
+
+- Font-family ✅
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+("Roboto", sans-serif;) ("Roboto", "Helvetica Naue", Arial, sans-serif;)
+
+
+- Favicon ✅
+
+- Ícones de Navegação ✅
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<span class="material-icons">&#xE87C;</span>
+
+Home - Search - Explore - Smart Display - Chat - Favorite - Add Box - View Timeline - Alternate Email - Menu
+
+
+- Ícones de Interação ✅
+
+
+Favorite - Chat Bubble - Send
+
+
+- 7 Postagens (imagem + legenda + foto para perfil) ✅
+
+
+Apple - Google - Microsoft - Netflix - HBO - Spotify - Theo
+
+
+- Sugestões de Amigos (5 imagens e nomes) ✅
+
+
+- Footer ✅
+
+Sobre.Ajuda.Imprensa.API.Carreiras.Privacidade.Termos.Localizações.Idioma.Meta Verified
+
+© 2025 Instagram from Meta
